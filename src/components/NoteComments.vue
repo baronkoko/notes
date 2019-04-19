@@ -56,14 +56,14 @@
               regex: /^([A-Z]{1}[a-z]+) ([A-Z]{1}[a-z]+)$/
             }"
             type="text"
-            name="name"
+            name="author"
             class="form-control"
             :class="{'is-invalid': errors.has('author') }"
             data-vv-as="name"
             aria-describedby="nameHelp"
             placeholder="Enter your name"
           >
-          <small id="nameHelp" class="form-text text-muted">This field must contain first name and last name, both with a capital letter.</small>
+          <small id="nameHelp" class="form-text text-muted">This field should contain your name and surname, both should begin with a capital letter.</small>
           <div
             class="alert alert-danger mt-2"
             role="alert"

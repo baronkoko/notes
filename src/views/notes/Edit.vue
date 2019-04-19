@@ -50,7 +50,10 @@
     >
       <div class="row">
         <div class="col">
-          <form @submit.prevent="validateForm">
+          <form
+            @submit.prevent="validateForm"
+            autocomplete="off"
+          >
             <div class="form-group">
               <label for="note-name">Note name</label>
               <input
@@ -62,6 +65,7 @@
                 class="form-control"
                 :class="{'is-invalid': errors.has('name') }"
                 placeholder="Enter note name"
+                autocomplete="nope"
               >
               <div
                 class="alert alert-danger mt-2"

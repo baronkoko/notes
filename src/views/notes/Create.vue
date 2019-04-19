@@ -38,7 +38,7 @@
                 v-model="form.name"
                 v-validate="'required'"
                 type="text"
-                name="title"
+                name="name"
                 class="form-control"
                 :class="{'is-invalid': errors.has('name') }"
                 placeholder="Enter note name"
