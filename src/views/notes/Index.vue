@@ -42,7 +42,7 @@
             >
               <div class="card-body">
                 <h5 class="card-title font-weight-bold">{{ note.name }}</h5>
-                <p class="card-text">W{{ note.content }}</p>
+                <p class="card-text">{{ note.content | textOverflow }}</p>
               </div>
             </router-link>
           </div>
@@ -80,6 +80,12 @@ export default {
   name: 'Notes',
   metaInfo: {
     title: 'All notes'
+  },
+  filters: {
+    textOverflow: function (value) {
+      if (!value) return ''
+      return (value.length > 250) ? `${value.substring(0, 250)}...` : value
+    }
   },
   data: () => ({
     notes: [],
