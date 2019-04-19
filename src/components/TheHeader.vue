@@ -12,6 +12,7 @@
           <router-link
             :to="{ name: 'settings' }"
             class="text-dark h4 mb-0"
+            title="Settings"
           >
             <font-awesome-icon icon="cog" />
           </router-link>
@@ -31,6 +32,8 @@ export default {
   lang="scss"
   scoped
 >
+  @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
   .header {
     &__logo {
        font-family: 'Indie Flower', cursive;

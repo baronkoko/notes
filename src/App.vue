@@ -98,6 +98,8 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '@/styles/bootstrap.scss';
+
   html,
   body {
     text-rendering: optimizeSpeed;
